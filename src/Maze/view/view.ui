@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>view</class>
+ <widget class="QMainWindow" name="view">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>722</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>722</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>view</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+  background-color: rgb(0, 0, 0);
+  color: white; 
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">
+  background-color: rgb(0, 0, 0);
+  color: white; 
+  border: 1px solid gray;
+</string>
+   </property>
+   <widget class="QLabel" name="labelH">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>10</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 4px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>𝑯𝒆𝒊𝒈𝒉𝒕</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxForHeight">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>80</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelW">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>150</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 4px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>𝑾𝒊𝒅𝒕𝒉</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxForWidth">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>220</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="genFileFromMaze">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>290</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(255, 151, 57);
+	color: white; 
+	border: 1px solid gray;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>𝑴𝒂𝒛𝒆 𝒈𝒆𝒏𝒆𝒓𝒂𝒕𝒊𝒐𝒏</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openFileFromMaze">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>370</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(255, 151, 57);
+	color: white; 
+	border: 1px solid gray;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>𝑶𝒑𝒆𝒏 𝒇𝒊𝒍𝒆 𝒇𝒓𝒐𝒎 𝒎𝒂𝒛𝒆</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="findingTheWay">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>530</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(255, 151, 57);
+	color: white; 
+	border: 1px solid gray;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>𝑭𝒊𝒏𝒅𝒊𝒏𝒈 𝒕𝒉𝒆 𝒘𝒂𝒚</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelHeightAtModel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 4px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>𝑯𝒆𝒊𝒈𝒉𝒕:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelWidthAtModel">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 4px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>𝑾𝒊𝒅𝒕𝒉:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="windowPrintMaze">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(215, 215, 215);
+  border: 1px solid gray;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="StartL">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>450</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 4px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>𝑺𝒕𝒂𝒓𝒕</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelH_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>450</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 4px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>𝑭𝒊𝒏𝒊𝒔𝒉</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxForWidthStart">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>495</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxForHeightStart">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>495</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxForWidthFinish">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>495</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxForHeightFinish">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>495</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+color: rgb(0, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
